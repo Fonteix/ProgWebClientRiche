@@ -1,16 +1,27 @@
 <!DOCTYPE HTML>
 <html>
-	<head>
-		<meta charset="UTF-8">
-		<title>Lecteur multimédia</title>
-		<link rel="stylesheet" type="text/css" href="css.css">
-		<script type="text/javascript" src="script.js"></script>
-	</head>
+<head>
+	<meta charset="UTF-8">
+	<title>Lecteur multimédia</title>
+	<link rel="stylesheet" type="text/css" href="css.css">
+</head>
 
-	<body>
-		
+<body>
+
+	<div id="buttons">
+		<button id="play" type="button">Play</button>
+		<button id="pause" type="button">Pause</button>
+		<button id="previous" type="button"><<</button>
+		<button id="next" type="button">>></button>
+	</div>
+
+	<div id="lecteur">
+		<video id="video1" width="640" height="264"preload="auto">
+			<source src="http: //www.monsite.fr/mavideo.mp4" type="video/mp4"/>
+		</video>
+	</div>
 
 
-	</body>
-	
+</body>
+<script type="text/javascript" src="script.js"></script>
 </html>
