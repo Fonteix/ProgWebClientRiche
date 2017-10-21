@@ -5,26 +5,33 @@
 	<title>Lecteur multimédia</title>
 	<link rel="stylesheet" type="text/css" href="css.css">
 </head>
-
 <body>
 
 	<div id="buttons">
-		<button id="play" type="button">Play</button>
-		<button id="pause" type="button">Pause</button>
-		<button id="previous" type="button"><<</button>
-		<button id="next" type="button">>></button>
-		<button id="volUp" type="button"> Vol+ </button>
-		<button id="volDown" type="button"> Vol- </button>
-		<button id="mute/unmute" type="button"> Mute </button>
-		<button id="fs" type="button">Fullscreen</button>
+		<button id="play" type="submit">Play</button>
+		<button id="pause" type="submit">Pause</button>
+		<button id="previous" type="submit"><<</button>
+		<button id="next" type="submit">>></button>
+		<button id="volUp" type="submit">Vol+</button>
+		<button id="volDown" type="submit">Vol-</button>
+		<button id="muteUnmute" type="submit">Mute</button>
+		<button id="fs" type="submit">Fullscreen</button>
+		<button id="add" type="submit">Add</button>
+		<input id="url"type="text" placeholder="URL video to add">
 	</div>
 
 	<div id="lecteur">
-		<video id="video1" width="640" height="264"preload="auto">
-			<source src="http: //www.monsite.fr/mavideo.mp4" type="video/mp4"/>
+		<video id="video1">
+			<source id="sourceVideo" type="video/mp4" src=""/>
 		</video>
 	</div>
 
+	<div class="modeleVideo">
+				<div id="rang">Rang : </div>
+				<button id="up" type="submit">UP</button>
+				<button id="down" type="submit">DOWN</button>
+				<button id="delete1" type="submit">Delete</button>
+	</div>
 
 </body>
 <script type="text/javascript" src="script.js"></script>
