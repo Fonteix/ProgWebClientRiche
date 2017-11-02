@@ -6,7 +6,7 @@
 	<link rel="stylesheet" type="text/css" href="css.css">
 </head>
 <body>
-
+	<div class="container">
 	<div id="lecteur">
 		<video id="video1">
 			<source id="sourceVideo" type="video/mp4" src="null"/>
@@ -22,7 +22,7 @@
 		<input id="volControl" type="range" min="0" max="100" step="1" oninput="SetVolume(this.value)" onchange="SetVolume(this.value)"></input>
 		<button id="fs" type="submit">Fullscreen</button>
 	</div>
-
+</div>
 	<div id = "playlist">
 		<button id="addTab" type="submit">Add to playlist</button>
 		<input id="urlToAdd" type="text" placeholder="URL video to add">

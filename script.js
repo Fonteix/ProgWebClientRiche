@@ -184,12 +184,12 @@ function main() {
     //On affiche la liste dans l'HTML pour l'utilisateur
     var iForA;
     var text = "<tr>"+
-                  "<td>"+
+                  "<th>"+
                     "Rank"+
-                  "</td>"+
-                  "<td>"+
+                  "</th>"+
+                  "<th>"+
                     "URL"+
-                  "</td>"+
+                  "</th>"+
                 "</tr>";
     for (iForA=0; iForA < tabPlaylist.length; iForA++) {
       //text = text + "<br>Rank : " + iForA + "<br>URL : " + tabPlaylist[iForA] + "<br>";
