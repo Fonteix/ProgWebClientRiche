@@ -219,9 +219,6 @@ function main() {
 
 
 
-
-
-
   //problème avec le splice & la suppression dans l'affichagen, tout se décale
   /*
     function addTab() {
