@@ -5,41 +5,48 @@
 	<title>Lecteur multimédia</title>
 	<link rel="stylesheet" type="text/css" href="css.css">
 </head>
+
 <body>
+	<header>
+		<h1>Lecteur multimédia</h1>
+	</header>
+
 	<div class="container">
-	<div id="lecteur">
-		<video id="video1">
-			<source id="sourceVideo" type="video/mp4" src="null"/>
-		</video>
-	</div>
+		<div id="lecteur">
+			<video id="video1">
+				<source id="sourceVideo" type="video/mp4" src="null"/>
+			</video>
+		</div>
 
-	<div id="controls">
-		<button id="play" type="submit">Play</button>
-		<button id="pause" type="submit">Pause</button>
-		<button id="previous" type="submit">&lt;&lt;</button>
-		<button id="next" type="submit">&gt;&gt;</button>
-		<button id="muteUnmute" type="submit">Mute</button>
-		<input id="volControl" type="range" min="0" max="100" step="1" oninput="SetVolume(this.value)" onchange="SetVolume(this.value)"></input>
-		<button id="fs" type="submit">Fullscreen</button>
+		<div id="controls">
+			<button id="play" type="submit">Play</button>
+			<button id="pause" type="submit">Pause</button>
+			<button id="previous" type="submit">&lt;&lt;</button>
+			<button id="next" type="submit">&gt;&gt;</button>
+			<button id="muteUnmute" type="submit">Mute</button>
+			<input id="volControl" type="range" min="0" max="100" step="1" oninput="SetVolume(this.value)" onchange="SetVolume(this.value)"></input>
+			<button id="fs" type="submit">Fullscreen</button>
+		</div>
 	</div>
-</div>
-	<div id = "playlist">
-		<button id="addTab" type="submit">Add to playlist</button>
-		<input id="urlToAdd" type="text" placeholder="URL video to add">
-		<br>
-		<button id="deleteTab" type="submit">Delete from playlist</button>
-		<input id="indexToDelete" type="text" placeholder="Index to delete">
-		<br>
-		<button id="move" type="submit">Move</button>
-		<a>From : </a>
-		<input id="currentIndex" type="text" placeholder="Rank to move">
-		<a>To : </a>
-		<input id="newIndex" type="text" placeholder="To which rank ?">
-		<br>
-		<br>
-		<a id="liste"></a>
+	
+	<div class="container2">	
+		<div id = "playlist">
+			<button id="addTab" type="submit">Add to playlist</button>
+			<input id="urlToAdd" type="text" placeholder="URL video to add">
+			<br>
+			<button id="deleteTab" type="submit">Delete from playlist</button>
+			<input id="indexToDelete" type="text" placeholder="Index to delete">
+			<br>
+			<button id="move" type="submit">Move</button>
+			<a>From : </a>
+			<input id="currentIndex" type="text" placeholder="Rank to move">
+			<a>To : </a>
+			<input id="newIndex" type="text" placeholder="To which rank ?">
+			<br>
+			<br>
+			<a id="liste"></a>
+		</div>
 	</div>
-
 	<table id="table"></table>
 
 <!-- modèle pour splice & afficahge parent/enfant
@@ -55,6 +62,8 @@
 	</div>
 -->
 <script type="text/javascript" src="script.js"></script>
+
+	<footer></footer>
 </body>
 
 </html>

@@ -137,7 +137,7 @@ function main() {
 		fullscreen.style.display = 'none';
 	}
 	
-	fs.addEventListener('click', function(e) {
+	fullscreen.addEventListener('click', function(e) {
 		handleFullscreen();
 	});
 
