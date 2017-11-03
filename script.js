@@ -14,7 +14,6 @@ document.getElementById("p1").innerHTML = "New text!";
 function main() {
 
   var video = document.getElementById("video1");
-  var i = 0;
   var playlistIndex = 0;
   var tabPlaylist = [];
 
@@ -80,12 +79,12 @@ function main() {
     consoleDebug();
   }
 
-  function up() {
+  /*function up() {
     console.log("up");
   }
   function down() {
     console.log("down");
-  }
+  }*/
 
   function play() {
     console.log("play");
@@ -203,9 +202,9 @@ function main() {
     document.getElementById("table").innerHTML = text;
   }
 
-  function getId() {
+  /*function getId() {
     console.log("row" + element.closest('tr').rowIndex + " -column" + element.closest('td').cellIndex);
-  }
+  }*/
 
   function consoleDebug() {
     //affichage pour débogage
